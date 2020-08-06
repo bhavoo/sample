@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta charset="utf-8">
+	<title>My HTML coding outputs</title>
+	<!--{link to the Font Awesome CDN - Content Delivery Network}-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+	<!--<script src="https://kit.fontawesome.com/ce7f1d813a.js" crossorigin="anonymous"></script>--><!--this didin't work-->
+	<link rel="icon" type="image/png" href="multimedia/images/favicon/bdcorp1.png"><!--This thing creates Favicon(the icon of tab). 
+	It needs specific size of icon.Can't use JPEG or GIF. USe icon image or PNG Try https://www.tailorbrands.com/........... Have made an account with gmail id already to make logo of BD Corp-->	
+</head>
+
+<body>
+	<header>
+
+		<h1>Welcome to Bhavesh's Webpage </h1>
+	</header>
+
+	<main>
+		
+		<h2>My first attempt to web development</h2>
+		<p>Always validate your website for <a href="https://validator.w3.org/" target="_blank">syntax (DOM structures validity)</a> and <a href="https://wave.webaim.org/" target="_blank">accessibity.</a> Validated sites are more robust and more accessible</p>
+		<br>
+		<p>While naming any file or folder remember - 1) all lowercases 2) no spaces 3) no special characters 4) simply and short names</p>
+		<hr>
+		<p>Go To <a href="#Babu-Bhaiya"> <i>Babu Bhaiya - Khopdi Phod Saale Ka</i></a></p>
+
+
+		<!--for Embedded links. Takes you to something in the same page. like scroll up or down. But how to use this???????-->
+		<div id = "Section-1">
+			<h2>Section-1</h2>
+		</div>
+		<a href="#Section-2"> Go to Section-2</a> 
+
+		<p>----- Learnt From Web Development Specialisation on Coursera --- Sponsored by NIT-Trichy----</p>
+		<i class="fas fa-angry"></i><!-- here fas is used for font awesome Solid icons-->
+		<i class="fas fa-angry fa-xs"></i><!--xs means extra small size-->
+		<i class="fas fa-angry fa-md"></i>
+		<i class="fas fa-angry fa-lg"></i>
+		<i class="fas fa-angry fa-2x"></i>
+		<i class="fas fa-angry fa-3x"></i>
+		<i class="fas fa-angry fa-5x"></i>
+		<br>
+		<i class="fas fa-car fa-xs"></i>
+		<i class="fas fa-car fa-md"></i>
+		<i class="fas fa-car fa-lg"></i>
+		<i class="fas fa-car fa-2x"></i>
+		<i class="fas fa-car fa-3x"></i>
+		<i class="fas fa-car fa-5x"></i>
+		<i class="fas fa-car fa-10x"></i>
+		<br>
+		<hr>
+		<h3>Links - Click any link/icon/image to visit that page</h3>
+		<a href = "https://www.nitt.edu/" target="_blank">National Institute of Technolofy - Trichy</a> <!-- a stands for anchor link/tag. In href i.e Hyper Reference, we provide the URL link
+		(i.e hyperlink) to which we want to redirect the users. Here, University of Michingan is what is known as 'Content' i.e the Clickable Part (text or image) -->
+		<br>
+		<!--for providing links to social media accounts-->
+		<a href="https://www.linkedin.com/in/bhaveshdangi/" aria-label = "LinkedIN" target="_blank"><i class="fas fa-linkedin fa-5x"></i></a>
+		<!--this didn't work-->
+		<!--The purpose of this technique is to provide a label for objects that can be read by assistive technology. The aria-label attribute provides the text label for an object, such as a button. When a screen reader encounters the object, the aria-label text is read so that the user will know what it is.-->
+		<br>
+
+		<!-- LINKS LECTURE--> 
+		<!--#1_ABSOLUTE References: Used for external websites i.e when u r not in-charge of the requested page-->
+		<a href="https://www.coursera.org/learn/html/home/welcome" target="_blank">Coursera - Introduction to HTML5</a>
+
+		<br>
+
+		<!--#2_Relative References: Used for local files in same or different folder. Should be used for our own sites so that it's easier to movie the website to other server, you do't need to rename everything-->
+		<!-- NEVER uses relative links that are specific to ur computere like C:\blahblah.html-->
+		<a href="my_first_code.html" target="_blank">my_first_code</a>
+		<br>
+		<a href="multimedia/images/cousins.jpg" target="_blank">My Cousins</a>
+		<br>
+		<a href="#history">History Section</a> <!--ID tag..For Internal references.. Takes you to History section in the web page. Used as Embedded references.-->
+		<br>
+		<a href="https://www.coursera.org/learn/html/home/welcome"><img src="multimedia/images/coursera_logo.jpg" target="_blank" alt = "Coursera logo"/></a>
+		<br>
+		<a href="https://www.google.com/search?q=Graduation&oq=Graduation&aqs=chrome..69i57j0l6.4092j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><i class="fas fa-graduation-cap fa-lg"></i></a>
+		<br>
+		<a href="https://www.google.com/search?q=Graduation&oq=Graduation&aqs=chrome..69i57j0l6.4092j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><img src="https://www.excelsior.edu/wp-content/uploads/2015/05/Graduation-678x509.jpg" alt = "Graduating students' image"></a>
+		<br>
+
+		<br><!--means Break-->
+
+		<figure>
+			<img src ="multimedia/images/cousins.jpg" target="_blank"
+				alt = "my cousins' pic"><!--don't forget to insert alt="" even if you keep it empty(can be kept empty for decorative images, logos etc). Be succinct,accurate and non-redundant. Don't include 'picture of... 'graphic of...'--><!--This is what will be shown when the browers/reader doesn't not support the image file for any reason. The users should be able to grasp what's in the image, even if they can't see the image-->
+			<figcaption>Default Image Size</figcaption>
+		</figure>
+		<br>
+
+		<figure>
+			<img src="multimedia/images/cousins.jpg"
+				width="500px" alt="BD Corp logo of 500px"> <!--hardcoded the pixel size as 500 i.e it will always be 500px not matter what brower or device u r using-->
+				<!--Browser will automatically decide height proportional to the width-->
+			<figcaption>Set image size</figcaption>
+		</figure> 
+		<br>
+
+		<!--If you want to make sure your picture fits inside a pre-defined box. But avoid this, causes problem-->
+		<!--
+		<figure>
+			<img src ="multimedia/images/cousins.jpg"
+				width="500px" height="100px"
+				alt="my cousins' pic"> 
+			<figcaption>Skewed Image Size</figcaption>
+		</figure>
+		-->
+
+
+		<figure>
+			<img src ="multimedia/images/cousins.jpg"
+				width="50%" alt="my cousins' pic"><!--width changes when you change the size of the browser window-->
+			<figcaption>Adjusted</figcaption>
+		</figure>
+		<br> 
+		<hr>
+
+		<!--Embedded links. Takes you to something in the same page. like scroll up or down. But how to use this???????-->
+		<div id = "Section-2">
+			<h2>Section-2</h2>
+		</div>
+		<br>
+		<a href="#Section-1"> Go to Section-1</a><!--Internal Ref.-->
+		<br>
+
+
+		<!--'Target' Attributes of ANchors : Whether the links open in same tab or in a new tab-->
+		<a href="https://www.coursera.org/learn/html/home/welcome" target="_blank">Coursera - Introduction to HTML5(Open In new window/tab)</a> <!--Open In new window/tab-->
+		<br>
+		<a href="https://www.coursera.org/learn/html/home/welcome" target="_self">Coursera - Introduction to HTML5(Opens in same tab)</a><!--Opens in same tab..this is the default and usually does not need to be specified-->
+		<!--Other types are "_parent" and "_top"-->
+		<br>
+		<h1>Multimedia Section</h1>
+		<h2>Vidoes</h2>
+		<video src="multimedia/videos/ashu_dance.mp4" width= "300" height="400" controls loop> Your Browers doesn't support the <code>video</code></video>
+		<!--"Control" attribute must be provided. It saves users from needless auto-download of videos-->
+		<!-- other commonly used attributes are "Autoplay", "loop". It is possible to use multiple attibutes.-->
+		<br>
+		<video src="multimedia/videos/ashu_dance.mp4#t=8,10" width= "300" height="400" controls loop> Your Browers doesn't support the <code>video</code></video><!--#t=4,12 is used for clipping purpose. the video will only play from 4 seconds to 12 seconds-->
+		<br>
+		<h2>Audio</h2>
+		<audio src="multimedia/audio/voice_recording.m4a" controls></audio>
+		<br>
+		<h2>External website videos(Ash-Deal on Youtube)</h2>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Wmga9JhVUeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--visit https://support.google.com/youtube/answer/171780?hl=en-->
+
+		<br>
+
+		<h2>External website Music: Memories- Maroon 5</h2>
+		<iframe width="30%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/694990510&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/jhuneabecovers" title="Jhune Abe" target="_blank" style="color: #cccccc; text-decoration: none;">Jhune Abe</a> · <a href="https://soundcloud.com/jhuneabecovers/memories-maroon-5" title="Memories - Maroon 5" target="_blank" style="color: #cccccc; text-decoration: none;">Memories - Maroon 5</a></div><!--https://www.youtube.com/watch?v=NcV4zZDpz3s-->
+
+		<!--Accessibility issues in multimedia -
+			1) Make sure to provide links to plugins, not all browsers support all kinds of multimedia.
+			2) Include text description and closed captioninf CC
+			3) MM should enhance content, not a distraction-->
+		<br>
+
+		<h1>TABLES</h1>
+		<!--Design Points to remember - Make sure to sketch your layout BEFORE you code as Rectifying it later takes much more time. Should Use only for tabular data, not for layout. Check for unclosed tags.Decide number of rows and columns. Decide if any rows or columns will span multiple cells.-->
+		<table><!-- the Container tag-->
+			<tr><td>one</td><td>2</td><td>Three</td></tr> 
+			<!--<tr></tr> tag is used to specify ROWS. <td></td> is used to specify COLUMNS.(cells technically)-->
+			<tr><td>4</td><td>five</td><td>6</td></tr>
+			<tr><td>seven</td><td>8</td><td>Nine</td></tr>
+
+						<!-- USE <th></th> tag for table headings. This is semanticaaly correct. DO NOT bold the <td></td> element instead.-->
+		</table>
+		<br>
+
+		<table><!-- USE <th></th> tag for table headings. This is semanticaaly correct. DO NOT bold the <td></td> element instead.-->
+			<tr><th>Column 1</th><th>Column 2</th><th>Column 3</th></tr>
+			<tr><td>one</td><td>2</td><td>Three</td></tr>
+			<tr><td>4</td><td>five</td><td>6</td></tr>
+			<tr><td>seven</td><td>8</td><td>Nine</td></tr>
+		</table>
+
+		<br>
+
+		<table border="1"><!--Use border attribute for making borders of table. The number determines the width of border i guess. But try to avoid styling in HTML-->
+			<!-- Use rowspan and colspan attributes for makings multiple-spanning cells.-->
+			<tr>
+				<th>Child's Name</th><th>Parent's Name</th>
+			</tr>
+
+			<tr>
+				<td rowspan="2">Catherine</td><td>Michael McCarthy</td>
+			</tr>
+
+			<tr>
+				<td>Collen McCarthy</td>
+			</tr>
+			
+			<tr>
+				<td>Maggie</td><td>Sheila McGee</td>
+			</tr>
+
+			<tr>
+				<td rowspan="2">Bhavesh</td><td>Sunil Dangi</td>
+			</tr>
+
+			<tr>
+				<td>Jyoti Dangi</td>
+			</tr>
+			
+		</table>
+		<br>
+
+		<table border="1">
+			<!--Use <caption> tag inside the table to link text caption to the table. DO NOT used heading tag line <h1> etc. That's visually might be right, but is semantically wrong-->
+			<caption>Caption-Children and their Parents</caption><!--Doesn't matter where you put this line inside <table> tag. It will be shown at the top of the table.-->
+			<tr>
+				<th>Child's Name</th><th>Parent's Name</th>
+			</tr>
+
+			<tr>
+				<td rowspan="2">Catherine</td><td>Michael McCarthy</td>
+			</tr>
+
+			<tr>
+				<td>Collen McCarthy</td>
+			</tr>
+			
+			<tr>
+				<td>Maggie</td><td>Sheila McGee</td>
+			</tr>
+
+			<tr>
+				<td rowspan="2">Bhavesh</td><td>Sunil Dangi</td>
+			</tr>
+
+			<tr>
+				<td>Jyoti Dangi</td>
+			</tr>
+
+		</table>
+
+		<br>
+
+		<h1>TAGS</h1> <!--Run code on multiple Browsers to check if they are working fine. Use validator to validate the code.-->
+		<!-- 
+		Generic : <p>(paragraph) and <div>(to divide content in blocks/sections)
+		Semantic : <header>, <nav>, <footer>, <figure>
+		Block Tags(tags that have display block. Forces a new line above a below)-  
+			Containers(where you can put like-minded code together): <article>, <aside>, <section>, <main>
+			<hr> (Hard Rule,doesn't contain any text. Put a horizontal line across the page)
+			<address> (italicized by many browsers)
+			<blockqoute> - has 'Cite' attribute
+			<details> with <summary>(elastic hand drop down open and close idea with text)
+		-->
+		<h2>Some Common Block Tags</h2>
+
+		<h3>hr</h3>
+		<p>Hard Rule,doesn't contain any text. Put a horizontal line across the page</p>
+		<hr>
+
+		<h3>address</h3>
+		<p>This is my address. Get italicized by many browsers</p>
+		<address>46, kamdhaj Nagar, Nimbahera.</address>
+		<hr>
+
+		<h3>blockquote</h3>
+		<p>Indents the quote and kind of lets people know there's a quote that you're looking at.</p>
+		<blockquote>Without requirements or design, programming is the art of adding bugs to an empty text file. <cite>Louis Srygley</cite> </blockquote>
+		<p>As I have used cite tag, If someone is doing a search on Louis Srygley, chances are that search engine will redirect users to my page</p>
+		<hr>
+
+		<h3>Deatils with Summary</h3>
+		<p>This is written inside a p-tag</p>
+		<details>
+			<summary>summary!</summary>
+			<p>...blah...blah.....blah.....This is written in Details tag. by Default, dropdown button is closed.</p>
+		</details>
+		<hr>
+		<br>
+		<h2>Some Common In-line Tags</h2>
+		<!--
+		<Span> was the original inline tag for plain text
+		<cite>
+		<abbr>
+		<time>
+		<code>
+		<sub> and <sup>
+		-->
+		<h3>Citing a source - cite</h3>
+		<p> The cite makes it much easier for people and bots to search the code for this specific information. <cite>Colleen Ma'am</cite></p>
+		<hr>
+
+		<h3>Defining your abbreviations - abbr</h3>
+		<p>The abbr will display an abbreviation on the brower. If a title attribute is specified in the tag, the title will appearwhen the mouse hovers over the abbrevation </p>
+		<p>The days of the week are often abbreviated <abbr title="Sunday">Sun</abbr>,<abbr title="Monday">Mon</abbr>,<abbr>Tues</abbr></p>
+		<hr>
+
+		<h3>Specifying the use of time - time </h3>
+		<p>The time is a completely tag that can be used to search for specific information</p>
+		<p>THe party starts as <time 9:00 PM></time></p>
+		<p>The party took place on<time>New Year's Eve</time></p>
+		<hr>
+
+		<h3>Identifying code fragments-code</h3>
+		<p>The code elements tend to be displayed in a different Font, but also has the semantic meaning to convey information to as many as possible.</p>
+		<p>I have been trying to learn how to write HTML but my <code>img</code> elements never seem to work.</p>
+		<hr>
+
+		<h3>Using subscripts and superscripts - sub and sup</h3>
+		<p>Ofter used in mathematical formula. Example t<sub>5</sub> = x<sup>2</sup> </p>
+		<hr>
+
+		<h2>Tag that need "more"</h2>
+
+		<h3>Button Tag</h3>
+		<button>Blue Pill</button> <button>Red Pill</button> Needs JavaScript to work
+		<hr>
+
+		<h3>Meter Tag</h3>
+		<p>Can take a lot of attributes. Better if it has some code that can make attribute values dynamic instead of hardcoded. Example - Final result of Exam,Time left,Fuel in the tank.</p>
+		<meter min="0" max="50" value="42"></meter><br>
+		<meter min="0" max="1" value=".25"></meter><br>
+		<meter min="5" max="10" value="8"></meter><br>
+		<hr>
+		<h3>Progress Bars</h3>
+		<p>Similar to meter, but is used when u r tracking progress and eventually want to reach 100% at the end. Like project-progress. Needs JavaScript for making values dynamic</p>
+		<!--
+		<progress value="20" max="150">
+		-->
+		<!--if the above code is enable, whatever follows hereafter will not be displayed in browers. Maybe something to do with JavaScript.-->
+		<hr>
+
+		<h2>TEST</h2>
+		<h3>iFrame</h3>
+		<p>Used to nest content. Not equally well supported by all browsers. Explore options like height and width.</p>
+		<p><b>WHY IS THIS NOT WORKING!!!!!!!</b></p><!--IT WORKED AFTER DISABLING THE ABOVE PROGRESS BARS-->
+
+		<div id="Babu-Bhaiya">
+			<p>Hera Pheri Special</p>
+		</div>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/KdXneMyTwek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<hr><!--FOR THIS TO WORK, YOUR URL should be an embedded ONE.--><!--The frameborder attribute on the iframe element is obsolete. Use CSS instead.-->
+
+
+		<h3>BDO birectional orientation with DIR attribute</h3>
+		<p><bdo dir="rtl"> If your language just not only goes from left to right <b>---but###</b> also right to left></bdo></p>
+		<p><bdo dir="ltr"> This text will go from left to right. The above text goes from right to left</bdo></p>
+		<hr>	
+
+		<h3>Maps with Area</h3>
+		<map> <area shape="" coords="" href="" alt=""> Creates clickable element in image but also needs javascript</map>
+		<hr>
+
+		<h2>Week-3 : Accessibility</h2>
+		<p>4 Principles (POUR) defined by w3c so that webpage is accessible to the <i>widest</i> audience possible. People with any kind of disabilities like blindness, deafness, cognitive disabilities etc. should be able to access the page. Legally required by govt. departments in US. POUR stands for:</p>
+		<ol>
+			<li>
+				Perceivable
+				Operable
+				Understandable
+				Robust
+			</li>
+		</ol>
+		<p>Avoid flashy, cool effects. Pay special attention to semantics behind the HTML5 tags</p>
+
+		<h3>Tips</h3>
+		<p>Always validate your website for <a href="https://validator.w3.org/" target="_blank">syntax</a> and<a href="https://wave.webaim.org/" target="_blank">accessibity.</a> Error Propogate, so always start rectifying errors from top</p>
+
+
+	</main>
+
+	<footer>
+		<p>This is the footer. Think of a more interesting one</p>
+	</footer>	
+</body>
+
+</html>
